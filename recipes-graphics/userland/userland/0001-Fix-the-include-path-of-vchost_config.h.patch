@@ -1,0 +1,26 @@
+From 021c5e6ad77396ead52f663fd928d98b64beb3ef Mon Sep 17 00:00:00 2001
+From: Hyungwon Hwang <hyungwon.hwang7@gmail.com>
+Date: Thu, 21 Jan 2016 22:21:01 +0900
+Subject: [PATCH] Fix the include path of vchost_config.h
+
+Signed-off-by: Hyungwon Hwang <hyungwon.hwang7@gmail.com>
+---
+ interface/vmcs_host/vcgencmd.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/interface/vmcs_host/vcgencmd.h b/interface/vmcs_host/vcgencmd.h
+index c2f63d2..d42e56a 100644
+--- a/interface/vmcs_host/vcgencmd.h
++++ b/interface/vmcs_host/vcgencmd.h
+@@ -30,7 +30,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #ifndef GENCMD_H
+ #define GENCMD_H
+ 
+-#include "vchost_config.h"
++#include "linux/vchost_config.h"
+ #include "interface/vchi/vchi.h"
+ 
+ VCHPRE_ void VCHPOST_ vc_vchi_gencmd_init(VCHI_INSTANCE_T initialise_instance, VCHI_CONNECTION_T **connections, uint32_t num_connections );
+-- 
+2.5.0
+

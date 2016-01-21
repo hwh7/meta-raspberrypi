@@ -23,6 +23,7 @@ SRC_URI = "\
     file://0003-fix-alloc-size-uninitialized.patch \
     file://0002-set-VMCS_INSTALL_PREFIX-to-usr.patch \
     file://0003-cmake-generate-and-install-pkgconfig-files.patch \
+    file://0001-Fix-the-include-path-of-vchost_config.h.patch \
     "
 
 S = "${WORKDIR}/git"
