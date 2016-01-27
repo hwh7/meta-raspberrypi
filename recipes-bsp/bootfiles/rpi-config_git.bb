@@ -9,6 +9,7 @@ COMPATIBLE_MACHINE = "raspberrypi"
 
 SRCREV = "5d2ca5f9bcb1b239c051e20c05a233fd79cf09d5"
 SRC_URI = "git://github.com/Evilpaul/RPi-config.git;protocol=git;branch=master \
+           file://0001-Set-the-memory-size-for-GPU-to-256M.patch \
           "
 
 S = "${WORKDIR}/git"
