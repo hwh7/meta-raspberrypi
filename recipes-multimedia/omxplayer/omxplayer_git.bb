@@ -7,7 +7,7 @@ SECTION = "console/utils"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=94d55d512a9ba36caa9b7df079bae19f"
 
-DEPENDS = "libpcre libav virtual/egl boost freetype dbus openssl samba libssh"
+DEPENDS = "libpcre virtual/egl boost freetype dbus openssl samba libssh"
 PR = "r4"
 
 SRCREV = "d99bd86c9fd80ea01f98761e130d7ac9a2bb7588"
